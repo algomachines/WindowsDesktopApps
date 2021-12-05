@@ -23,3 +23,7 @@ Privacy in transit is guaranteed by AlgoMachines' novel protected code security 
 
 https://github.com/algomachines/WindowsDesktopApps/blob/main/DOC/PrivateMessanger_SecurityModel.png
 
+PrivateMessanger Client V1.0.0.0 Binary: 
+
+https://github.com/algomachines/WindowsDesktopApps/raw/main/BIN/PrivateMessenger.exe
+
