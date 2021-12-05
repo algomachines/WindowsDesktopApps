@@ -2,7 +2,7 @@
 
 ## PrivateMessenger
 
-A Window x64 text messaging appliction. 
+A Window x64 text messaging application. 
 
 Designed to work with the companion AlgoMachines CGI component as a server. The current version of the CGI  component supports up to 10,000 clients.
 
