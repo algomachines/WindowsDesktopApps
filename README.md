@@ -10,7 +10,7 @@ Designed to work with the companion AlgoMachines CGI component as a server. The 
 
 The only way to achieve real privacy and personal sovereignty over our data is for people to take the server side into their own hands. To that end, we will open the source of the PrivateMessenger CGI component.
 
-This is a complete client/server solution to text messaging which requires no configuration or tuning, no IT expertise, no third parties. You will be able to set up your own text message server immediately if you have a Windows http server.
+This is a complete client/server solution for text messaging which requires no configuration or tuning, no IT expertise, no third parties. You will be able to set up your own text message server immediately if you have a Windows http server.
 
 ### Installation and use
 
