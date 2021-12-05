@@ -20,4 +20,5 @@ Designed to work with the companion AlgoMachines CGI component as a server. The 
 Your messages are encrypted with your app password as they reside on your PC. Messages on the server are deleted as soon as they are downloaded to the recipient client.
 
 Privacy in transit is guaranteed by AlgoMachine's novel protected code security mechanism.
+https://github.com/algomachines/WindowsDesktopApps/blob/main/DOC/PrivateMessanger_SecurityModel.png
 
