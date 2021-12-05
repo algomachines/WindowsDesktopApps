@@ -21,7 +21,7 @@ Your messages are encrypted with your app password as they reside on your PC. Me
 
 Privacy in transit is guaranteed by AlgoMachines' novel protected code security mechanism.
 
-https://github.com/algomachines/WindowsDesktopApps/blob/main/DOC/PrivateMessanger_SecurityModel.png
+https://github.com/algomachines/WindowsDesktopApps/blob/main/DOC/PrivateMessenger_SecurityModel.png
 
 ### Download PrivateMessenger Client
 
