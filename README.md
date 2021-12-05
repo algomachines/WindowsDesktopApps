@@ -39,3 +39,6 @@ https://github.com/algomachines/WindowsDesktopApps/blob/main/DOC/PrivateMessenge
 
 https://github.com/algomachines/WindowsDesktopApps/raw/main/BIN/PrivateMessenger.exe
 
+### About the source code
+
+The complete source code for the Windows client is included in this repository. This has been developed using Visual Studio 2019.
