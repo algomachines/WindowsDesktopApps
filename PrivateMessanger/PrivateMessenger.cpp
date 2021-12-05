@@ -1042,8 +1042,46 @@ INT_PTR CALLBACK About(HWND hDlg, UINT message, WPARAM wParam, LPARAM lParam)
     {
     case WM_INITDIALOG:
     {
+        /////////////////////////////////////////////////////////////////////////////////////////
+        // Get the .exe version number
+        char this_exe[MAX_PATH];
+        GetModuleFileName(NULL, this_exe, sizeof(this_exe));
+
+        DWORD h;
+        DWORD sz = GetFileVersionInfoSize(this_exe, &h);
+        string s_version;
+        s_version.resize(100);
+        while (sz)
+        {
+            char* buf = new char[sz];
+            if (!GetFileVersionInfo(this_exe, h, sz, &buf[0]))
+            {
+                delete buf;
+                break;
+            }
+
+            VS_FIXEDFILEINFO* pvi;
+            sz = sizeof(VS_FIXEDFILEINFO);
+            if (!VerQueryValue(&buf[0], "\\", (LPVOID*)&pvi, (unsigned int*)&sz))
+            {
+                delete buf;
+                break;
+            }
+
+            sprintf_s(&s_version[0], s_version.length(), "V%d.%d.%d.%d "
+                , pvi->dwProductVersionMS >> 16
+                , pvi->dwFileVersionMS & 0xFFFF
+                , pvi->dwFileVersionLS >> 16
+                , pvi->dwFileVersionLS & 0xFFFF
+            );
+
+            delete buf;
+
+            break;
+        }
+        /////////////////////////////////////////////////////////////////////////////////////////////
         char line1[256];
-        sprintf_s(line1, sizeof(line1), "PrivateMessanger Build Timestamp: %s %s", __DATE__, __TIME__);
+        sprintf_s(line1, sizeof(line1), "PrivateMessanger %sBuild Timestamp: %s %s", s_version.c_str(), __DATE__, __TIME__);
 
         SetWindowText(GetDlgItem(hDlg, IDC_Line1), line1);
 
