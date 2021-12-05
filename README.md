@@ -1,6 +1,6 @@
 # WindowsDesktopApps
 
-## PrivateMesanger
+## PrivateMessenger
 
 A Window x64 text messaging appliction. 
 
